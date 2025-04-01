@@ -1,23 +1,25 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    text-align: center; /* Center aligns inline elements */
-}
-
-.container {
-    margin-top: 50px;
-}
-
-h1 {
-    color: #e91e63;
-}
-
-.gift-box {
-    width: 200px;
-    margin: 20px auto; /* auto left and right margins will center the box */
-    cursor: pointer;
-}
-
-.gift-box img {
-    width: 100%;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday miss haluuoooooo!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday miss haluuoooooo!</h1>
+        <div class="fireworks">
+            <!-- Fireworks will be added here by JavaScript -->
+        </div>
+        <div class="gift-box">
+            <img src="gift.png" alt="Gift Box" id="gift">
+        </div>
+        <div class="popup" id="popup">
+            <img src="birthday_image.jpg" alt="Birthday Image" id="birthdayImage">
+        </div>
+        <audio id="birthdayMusic" src="happy_birthday.mp3" preload="auto"></audio>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -34,12 +34,14 @@ document.addEventListener('DOMContentLoaded', function() {
         return color;
     }
 
-    // Gift Box
+    // Gift Box and Music
     const giftBox = document.getElementById('gift');
     const popup = document.getElementById('popup');
+    const audio = document.getElementById('birthdayMusic');
 
     giftBox.addEventListener('click', function() {
         popup.style.display = 'flex';
+        audio.play();
     });
 
     popup.addEventListener('click', function() {

@@ -43,3 +43,22 @@ h1 {
     max-width: 80%;
     max-height: 80%;
 }
+.firework {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    border-radius: 50%;
+    animation: explode 2s ease-out forwards;
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(10);
+        opacity: 0;
+    }
+}

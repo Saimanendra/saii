@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    text-align: center; /* Center aligns inline elements */
+    text-align: center;
 }
 
 .container {
@@ -14,7 +14,7 @@ h1 {
 
 .gift-box {
     width: 200px;
-    margin: 20px auto; /* auto left and right margins will center the box */
+    margin: 20px auto;
     cursor: pointer;
 }
 
@@ -29,17 +29,18 @@ h1 {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    display: none;  /* IMPORTANT:  Initially hidden */
+    display: none;
     justify-content: center;
     align-items: center;
     z-index: 1000;
 }
 
 .popup img {
-    max-width: 90%;  /* Reduce image size */
-    max-height: 90%; /* Reduce image size */
-    object-fit: contain; /* Prevents image distortion */
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
 }
+
 .fireworks {
     position: relative;
     width: 100%;
@@ -53,16 +54,24 @@ h1 {
     width: 5px;
     height: 20px;
     background-color: white;
-    animation: explode 2s ease-out forwards;
+    animation: launch-and-explode 2s ease-out forwards; /* Changed animation name */
 }
 
-@keyframes explode {
+@keyframes launch-and-explode { /* Changed keyframes name */
     0% {
-        transform: translateY(0);
+        transform: translateY(0) scale(1); /* Start at the bottom */
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(-200px) scale(1); /* Go up */
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(-200px) scale(1.5); /* "Explode" - Scale up */
         opacity: 1;
     }
     100% {
-        transform: translateY(-200px); /* Adjust as needed */
+        transform: translateY(-200px) scale(0); /* Fade out at the top */
         opacity: 0;
     }
 }

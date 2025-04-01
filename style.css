@@ -1,18 +1,23 @@
-.popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000; /* Ensure it's on top of everything */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center; /* Center aligns inline elements */
 }
 
-.popup img {
-    max-width: 90%;  /* Reduce image size */
-    max-height: 90%; /* Reduce image size */
-    object-fit: contain; /* Prevents image distortion */
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    color: #e91e63;
+}
+
+.gift-box {
+    width: 200px;
+    margin: 20px auto; /* auto left and right margins will center the box */
+    cursor: pointer;
+}
+
+.gift-box img {
+    width: 100%;
 }

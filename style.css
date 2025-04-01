@@ -47,7 +47,7 @@ h1 {
     position: absolute;
     width: 5px;
     height: 5px;
-    background-color: white;
+    /* Remove background-color: white; here */
     border-radius: 50%;
     animation: explode 2s ease-out forwards;
 }
